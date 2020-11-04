@@ -1,28 +1,22 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <app-counter></app-counter>
+    <app-result></app-result>
+    <app-result2></app-result2>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Counter from "./components/Counter";
+import Result from "./components/Result";
+import Result2 from "./components/Result2";
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    appCounter: Counter,
+    appResult: Result,
+    appResult2: Result2,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style scoped></style>
